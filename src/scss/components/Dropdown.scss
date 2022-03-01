@@ -1,0 +1,47 @@
+@import "../utils";
+
+.dropdown {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  padding: 10px 40px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  + div {
+    display: none;
+  }
+
+  &.active {
+    margin-bottom: 0;
+    + div {
+      display: block;
+      padding: 24px;
+      margin-bottom: 40px;
+
+      color: $primary;
+      background-color: $light-grey;
+    }
+    img {
+      transform: unset;
+    }
+  }
+
+  img {
+    display: inline;
+    height: 20px;
+    width: auto;
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dropdown {
+    padding: 10px;
+    img {
+      height: 12px;
+    }
+  }
+}
