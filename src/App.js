@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.scss";
 import Header from "./components/Header.js";
+import Accuiel from "./screens/Accuiel";
+import APropos from "./screens/APropos.js";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<h1>Accueil</h1>} />
-        <Route path="/about" element={<h1>About</h1>} />
+        <Route path="/" element={<Accuiel />} />
+        <Route path="/about" element={<APropos />} />
       </Routes>
     </Router>
   );

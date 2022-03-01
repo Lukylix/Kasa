@@ -22,3 +22,24 @@ h6,
 a {
   color: $primary;
 }
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+main {
+  margin: 0 130px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 0 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
