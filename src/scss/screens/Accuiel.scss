@@ -1,0 +1,29 @@
+@import "../utils";
+.logementsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 80px;
+  row-gap: 65px;
+  padding: 65px;
+  background-color: $light-grey;
+  border-radius: 35px;
+  margin-bottom: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logementsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 0;
+    background-color: transparent;
+    figure:before {
+      padding-top: 76%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logementsContainer {
+    grid-template-columns: 1fr;
+  }
+}

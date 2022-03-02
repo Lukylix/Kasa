@@ -36,6 +36,10 @@ button {
   font-size: 32px;
 }
 
+figcaption {
+  font-size: 24px;
+}
+
 button {
   background-color: $primary;
   color: white;
@@ -64,5 +68,8 @@ main {
   p,
   button {
     font-size: 12px;
+  }
+  figaption {
+    font-size: 18px;
   }
 }
