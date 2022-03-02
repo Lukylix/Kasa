@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer.js";
 import Header from "./components/Header.js";
 import Accuiel from "./screens/Accuiel";
 import APropos from "./screens/APropos.js";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/logement" element={<Logement />} />
         <Route path="*" element={<PageNotFoud />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
