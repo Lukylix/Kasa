@@ -1,0 +1,14 @@
+@import "../utils";
+.tag {
+  display: inline-block;
+  height: 34px;
+  min-width: 150px;
+  border-radius: 13px;
+  background-color: $primary;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 34px;
+  padding: 0 22px;
+  margin-right: 13px;
+}

@@ -1,5 +1,7 @@
 @import "../utils";
-
+.dropdownParent {
+  margin-bottom: 45px;
+}
 .dropdown {
   width: 100%;
   border: none;
@@ -10,8 +12,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+
   + div {
     display: none;
+    font-size: 24px;
   }
 
   &.active {
@@ -19,8 +23,8 @@
     + div {
       display: block;
       padding: 24px;
-      margin-bottom: 40px;
-
+      border-radius: 0 0 6px 6px;
+      min-height: calc(100% - 60px);
       color: $primary;
       background-color: $light-grey;
     }
@@ -40,6 +44,9 @@
 @media screen and (max-width: 1024px) {
   .dropdown {
     padding: 10px;
+    + div {
+      font-size: 12px;
+    }
     img {
       height: 12px;
     }

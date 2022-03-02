@@ -6,7 +6,7 @@
   }
 }
 
-header {
+#root > header {
   display: flex;
   justify-content: space-between;
   margin: 50px 130px;
@@ -25,7 +25,7 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
+  #root > header {
     margin: 20px;
   }
 }
@@ -34,7 +34,7 @@ header {
   .logo {
     height: 35px;
   }
-  header {
+  #root > header {
     nav {
       font-size: 24px;
       ul {
@@ -47,7 +47,7 @@ header {
 }
 
 @media screen and (max-width: 425px) {
-  header {
+  #root > header {
     nav {
       font-size: 12px;
       text-transform: uppercase;
