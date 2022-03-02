@@ -1,15 +1,11 @@
+@import "../utils";
 .logo {
-  font-size: 5.5rem;
-  letter-spacing: 10px;
-  .house {
-    display: inline;
-    position: relative;
-    top: 8px;
-    height: 55px;
-    margin: 0 10px 0 0;
-    width: auto;
+  height: 55px;
+  path {
+    fill: $primary;
   }
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -36,13 +32,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .logo {
-    font-size: 3rem;
-    letter-spacing: 8px;
-    .house {
-      top: 5px;
-      height: 35px;
-      margin: 0 8px 0 0;
-    }
+    height: 35px;
   }
   header {
     nav {
@@ -72,12 +62,6 @@ header {
 
 @media screen and (max-width: 320px) {
   .logo {
-    font-size: 2.5rem;
-    letter-spacing: 4px;
-    .house {
-      top: 4px;
-      height: 26px;
-      margin: 0 4px 0 0;
-    }
+    height: 26px;
   }
 }
