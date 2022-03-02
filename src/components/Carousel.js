@@ -5,7 +5,7 @@ import { ReactComponent as ChevronRight } from "../assets/chevronRight.svg";
 
 function Carousel({ children }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const length = children.length;
+  const length = children?.length || 0;
 
   const next = () => {
     if (currentIndex < length - 1) return setCurrentIndex(currentIndex + 1);
