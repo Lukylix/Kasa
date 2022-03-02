@@ -1,5 +1,5 @@
 import { useState } from "react";
-import chevronUp from "../assets/chevronUp.svg";
+import { ReactComponent as ChevronUp } from "../assets/chevronUp.svg";
 import "../scss/components/Dropdown.scss";
 
 function Dropdown({ title, children }) {
@@ -8,7 +8,7 @@ function Dropdown({ title, children }) {
     <div className="dropdownParent">
       <button className={`dropdown ${isOpen && "active"}`} onClick={() => setIsOpen(!isOpen)}>
         {title}
-        <img src={chevronUp} alt="Icone chevron" />
+        <ChevronUp />
       </button>
       <div>{children}</div>
     </div>

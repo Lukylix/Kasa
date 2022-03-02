@@ -26,12 +26,12 @@
       color: $primary;
       background-color: $light-grey;
     }
-    img {
+    svg {
       transform: unset;
     }
   }
 
-  img {
+  svg {
     display: inline;
     height: 20px;
     width: auto;
