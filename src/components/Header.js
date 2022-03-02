@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CustomLink from "./CustomLink";
-import Logo from "./Logo";
+import { ReactComponent as LogoKasa } from "../assets/logoKasa.svg";
+
 import "../scss/components/Header.scss";
 
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
     <header>
       <h1>
         <Link to="/">
-          <Logo className="logo" />
+          <LogoKasa className="logo" />
         </Link>
       </h1>
       <nav>
