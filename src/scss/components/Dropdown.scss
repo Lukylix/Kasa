@@ -39,13 +39,17 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1275px) {
   .dropdown {
     padding: 10px;
+    font-size: 12px;
+    &.active + div {
+      min-height: calc(100% - 33px);
+    }
     + div {
       font-size: 12px;
     }
-    img {
+    svg {
       height: 12px;
     }
   }
