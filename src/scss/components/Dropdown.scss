@@ -1,53 +1,45 @@
 @import "../utils";
-.dropdownParent {
+
+details {
   margin-bottom: 45px;
-}
-.dropdown {
-  width: 100%;
-  border: none;
-  border-radius: 6px;
-  text-align: left;
-  padding: 10px 40px 10px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  + div {
-    display: none;
-    font-size: 24px;
+  &[open] summary svg {
+    transform: unset;
   }
-
-  &.active {
-    + div {
-      display: block;
+  summary {
+    list-style: none;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    svg {
+      transform: rotate(180deg);
+    }
+    + * {
+      height: calc(100% - 59px);
       padding: 24px;
       border-radius: 0 0 6px 6px;
-      min-height: calc(100% - 60px);
       color: $primary;
       background-color: $light-grey;
     }
-    svg {
-      transform: unset;
-    }
   }
-
-  svg {
-    display: inline;
-    height: 20px;
-    width: auto;
-    transform: rotate(180deg);
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
   }
 }
 
 @media screen and (max-width: 1275px) {
-  .dropdown {
-    padding: 10px;
+  details summary {
     font-size: 12px;
-    &.active + div {
-      min-height: calc(100% - 33px);
-    }
-    + div {
+    + * {
       font-size: 12px;
+      padding: 10px;
+      height: calc(100% - 35px);
     }
     svg {
       height: 12px;

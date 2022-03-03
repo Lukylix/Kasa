@@ -26,10 +26,10 @@ function Logement() {
               <img src={picture} alt={logement.title} key={index} />
             ))}
           </Carousel>
-          <section className="details">
+          <section className="details" aria-labelledby="logement-title">
             <header>
               <div>
-                <h3>{logement.title}</h3>
+                <h3 id="logement-title">{logement.title}</h3>
                 <p className="details__location">{logement.location}</p>
                 {logement.tags.map((tag, index) => (
                   <Tag name={tag} key={index} />
