@@ -89,6 +89,15 @@
         }
       }
     }
+    details {
+      font-size: 15px;
+      summary {
+        padding: 10px;
+        svg {
+          height: 15px;
+        }
+      }
+    }
   }
 }
 
@@ -98,6 +107,7 @@
     header {
       grid-template-columns: auto;
       .details__host-rate {
+        margin-top: 10px;
         width: 100%;
         flex-direction: row;
         justify-content: flex-end;

@@ -10,7 +10,7 @@
   margin-bottom: 65px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .logementsContainer {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;

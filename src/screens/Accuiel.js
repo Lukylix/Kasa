@@ -8,7 +8,7 @@ function Accueil() {
   return (
     <main>
       <Slogan src={banner} alt="Paysage côtier" title="Chez vous, partout et ailleurs" />
-      <section className="logementsContainer">
+      <section aria-label="Les logements" className="logementsContainer">
         {logements.map((logement) => (
           <LogementCard key={logement.id} cover={logement.cover} title={logement.title} id={logement.id} />
         ))}
