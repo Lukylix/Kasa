@@ -4,6 +4,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 100px;
+  .carousel {
+    grid-column: 1 / -1;
+  }
   header {
     grid-column: 1 / -1;
     display: grid;

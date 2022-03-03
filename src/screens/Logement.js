@@ -21,13 +21,13 @@ function Logement() {
     <>
       {logement && (
         <main>
-          <Carousel>
-            {logement?.pictures.map((picture, index) => (
-              <img src={picture} alt={logement.title} key={index} />
-            ))}
-          </Carousel>
           <section className="details" aria-labelledby="logement-title">
             <header>
+              <Carousel>
+                {logement?.pictures.map((picture, index) => (
+                  <img src={picture} alt={logement.title} key={index} />
+                ))}
+              </Carousel>
               <div>
                 <h3 id="logement-title">{logement.title}</h3>
                 <p className="details__location">{logement.location}</p>

@@ -5,9 +5,8 @@ function LogementCard({ cover, title, id }) {
   return (
     <Link to={`/logement?id=${id}`}>
       <figure className="logementCard">
-        <div className="logementImg">
-          <img src={cover} alt={title} />
-        </div>
+        <img src={cover} alt={title} />
+
         <figcaption>{title}</figcaption>
       </figure>
     </Link>
