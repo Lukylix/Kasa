@@ -4,7 +4,7 @@ import Header from "./components/Header.js";
 import Accuiel from "./screens/Accuiel";
 import APropos from "./screens/APropos.js";
 import Logement from "./screens/Logement.js";
-import PageNotFoud from "./screens/PageNotFoud.js";
+import PageNotFoud from "./screens/PageNotFound.js";
 
 function App() {
   return (
