@@ -6,7 +6,6 @@ function LogementCard({ cover, title, id }) {
     <Link to={`/logement?id=${id}`}>
       <figure className="logementCard">
         <img src={cover} alt={title} />
-
         <figcaption>{title}</figcaption>
       </figure>
     </Link>

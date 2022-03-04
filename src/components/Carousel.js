@@ -19,7 +19,7 @@ function Carousel({ children }) {
   return (
     <div className="carousel">
       {length > 1 && (
-        <button onClick={prev} className="leftArrow">
+        <button onClick={prev} aria-label="Image précedente" className="leftArrow">
           <ChevronLeft />
         </button>
       )}
@@ -27,7 +27,7 @@ function Carousel({ children }) {
         {children}
       </div>
       {length > 1 && (
-        <button onClick={next} className="rightArrow">
+        <button onClick={next} aria-label="Image suivante" className="rightArrow">
           <ChevronRight />
         </button>
       )}

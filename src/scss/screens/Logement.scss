@@ -10,12 +10,13 @@
   header {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto min-content;
     font-size: 24px;
     margin-bottom: 24px;
-    h2,
-    h3 {
+    h2 {
       margin-right: 20px;
+      width: 100%;
+      font-size: 48px;
     }
     .details__location {
       color: $primary;
@@ -26,7 +27,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      width: fit-content;
+      width: max-content;
       height: 100%;
       justify-self: end;
       .host {
@@ -47,7 +48,7 @@
       }
       .rating {
         position: absolute;
-        bottom: 0;
+        top: 85px;
         right: 0;
         width: max-content;
         .star {
@@ -73,18 +74,21 @@
       padding: 0 10px;
     }
     header {
-      grid-template-columns: auto auto;
-      h2,
-      h3 {
+      h2 {
         font-size: 18px;
       }
       .details__location {
         margin-bottom: 0;
+        font-size: 18px;
       }
       .details__host-rate {
+        font-size: 18px;
+        .host img {
+          height: 45px;
+          width: 45px;
+        }
         .rating {
-          bottom: -10px;
-          right: calc(85px + 15px);
+          top: 45px;
           .star {
             height: 18px;
             margin: 0 0 0 5px;
@@ -107,29 +111,34 @@
 @media screen and (max-width: 768px) {
   .details {
     grid-template-columns: 1fr;
-    header {
-      grid-template-columns: auto;
-      .details__host-rate {
-        margin-top: 10px;
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-end;
-        .rating {
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          .star {
-            margin: 0 5px 0 0;
-          }
+    .details__host-rate {
+      .host {
+        p {
+          font-size: 12px;
         }
-        .host {
-          p {
-            font-size: 12px;
-          }
-          img {
-            height: 32px;
-            width: 32px;
-          }
+        img {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .details header {
+    grid-template-columns: auto;
+    .details__host-rate {
+      margin-top: 10px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      .rating {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        .star {
+          margin: 0 5px 0 0;
         }
       }
     }

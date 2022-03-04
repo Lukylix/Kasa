@@ -29,7 +29,7 @@ function Logement() {
                 ))}
               </Carousel>
               <div>
-                <h3 id="logement-title">{logement.title}</h3>
+                <h2 id="logement-title">{logement.title}</h2>
                 <p className="details__location">{logement.location}</p>
                 {logement.tags.map((tag, index) => (
                   <Tag name={tag} key={index} />

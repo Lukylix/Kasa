@@ -7,11 +7,11 @@ import "../scss/components/Header.scss";
 function Header() {
   return (
     <header>
-      <h1>
-        <Link to="/">
+      <Link to="/">
+        <h1 aria-label="Kasa logo">
           <LogoKasa className="logo" />
-        </Link>
-      </h1>
+        </h1>
+      </Link>
       <nav>
         <ul>
           <li>
