@@ -36,6 +36,14 @@
   .rightArrow {
     right: 30px;
   }
+  .imageNumber {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 500;
+  }
 }
 
 @media screen and (max-width: 1024px) {

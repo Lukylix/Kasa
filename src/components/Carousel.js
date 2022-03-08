@@ -31,6 +31,11 @@ function Carousel({ children }) {
           <ChevronRight />
         </button>
       )}
+      {length > 1 && (
+        <p className="imageNumber">
+          {currentIndex + 1}/{length}
+        </p>
+      )}
     </div>
   );
 }
